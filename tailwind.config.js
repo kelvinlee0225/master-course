@@ -11,6 +11,7 @@ export default {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        roboto_condensed: ["Roboto Condense", "sans-serif"],
       },
     },
     screens: {
