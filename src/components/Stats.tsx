@@ -4,9 +4,7 @@ import { BsStarFill, BsStarHalf } from "react-icons/bs";
 
 export function Stats() {
   return (
-    <section
-      className={`md:${styles.paddingY} flex justify-around flex-row flex-wrap w-full `}
-    >
+    <div className={`mb-8 flex justify-around flex-row flex-wrap w-full `}>
       {StatsConstants.map((stat, index) => {
         return (
           <div className={`${styles.flexCenter}`}>
@@ -35,6 +33,6 @@ export function Stats() {
           </div>
         );
       })}
-    </section>
+    </div>
   );
 }
