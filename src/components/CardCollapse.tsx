@@ -5,7 +5,7 @@ import styles from "../style";
 type CardCollapseProps = {
   id: string;
   title: string;
-  value: string;
+  value: string | string[];
 };
 
 export function CardCollapse({ id, title, value }: CardCollapseProps) {
@@ -17,7 +17,7 @@ export function CardCollapse({ id, title, value }: CardCollapseProps) {
     <div>
       <div
         key={id}
-        className="w-full flex flex-col cursor-pointer border-b-2 border-b-dimWhite py-2"
+        className="w-full flex flex-col cursor-pointer border-b-2 border-b-dimWhite py-4"
         onClick={() => {
           setToggle((prev) => !prev);
         }}
@@ -38,7 +38,21 @@ export function CardCollapse({ id, title, value }: CardCollapseProps) {
             : "h-auto"
         }`}
       >
-        <p className={`${styles.paragraph} py-4 card-dropdown`}>{value}</p>
+        {Array.isArray(value) ? (
+          value.map((val) => (
+            <p
+              className={`${styles.paragraph} py-2 card-dropdown sm:text-[22px]`}
+            >
+              {val}
+            </p>
+          ))
+        ) : (
+          <p
+            className={`${styles.paragraph} py-4 card-dropdown sm:text-[22px]`}
+          >
+            {value}
+          </p>
+        )}
       </div>
     </div>
   );

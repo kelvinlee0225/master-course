@@ -10,3 +10,4 @@ export * from "./Testimonials";
 export * from "./Hero";
 export * from "./Certificate";
 export * from "./Career";
+export * from "./Card";
