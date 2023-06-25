@@ -9,3 +9,4 @@ export * from "./Stats";
 export * from "./Testimonials";
 export * from "./Hero";
 export * from "./Certificate";
+export * from "./Career";

@@ -84,6 +84,12 @@
   animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+.card-collapse {
+  height: 0px;
+  overflow: hidden;
+  transition: height ease 0.9s;
+}
+
 @-webkit-keyframes slide-top {
   0% {
     -webkit-transform: translateY(100px);
