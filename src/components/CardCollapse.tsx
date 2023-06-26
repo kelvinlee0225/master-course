@@ -1,22 +1,19 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
 import styles from "../style";
 
 type CardCollapseProps = {
-  id: string;
   title: string;
   value: string | string[];
 };
 
-export function CardCollapse({ id, title, value }: CardCollapseProps) {
+export function CardCollapse({ title, value }: CardCollapseProps) {
   const [toggle, setToggle] = useState(false);
-  //   const contentRef = useRef();
-  //   if (contentRef.current) console.log(contentRef.current.scrollHeight);
+  const contentRef = useRef<HTMLDivElement>(null);
 
   return (
     <div>
       <div
-        key={id}
         className="w-full flex flex-col cursor-pointer border-b-2 border-b-dimWhite py-4"
         onClick={() => {
           setToggle((prev) => !prev);
@@ -31,16 +28,20 @@ export function CardCollapse({ id, title, value }: CardCollapseProps) {
           )}
         </div>
       </div>
+
       <div
-        className={`${
+        ref={contentRef}
+        className={`overflow-hidden transition-[height] ease duration-[1s]`}
+        style={
           toggle
-            ? "h-0 overflow-hidden transition h ease-out duration-[0.9s]"
-            : "h-auto"
-        }`}
+            ? { height: contentRef.current?.scrollHeight + "px" }
+            : { height: "0px" }
+        }
       >
         {Array.isArray(value) ? (
-          value.map((val) => (
+          value.map((val, index) => (
             <p
+              key={`card-collapse-description-${index}`}
               className={`${styles.paragraph} py-2 card-dropdown sm:text-[22px]`}
             >
               {val}

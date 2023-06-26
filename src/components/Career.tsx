@@ -14,7 +14,7 @@ export function Career() {
         <div>
           {AboutCareerConstants.map((about) => (
             <CardCollapse
-              id={about.id}
+              key={about.id}
               title={about.title}
               value={about.value}
             />
