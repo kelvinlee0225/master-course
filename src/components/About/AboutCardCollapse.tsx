@@ -1,13 +1,13 @@
 import { useRef, useState } from "react";
 import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
-import styles from "../style";
+import styles from "../../style";
 
 type CardCollapseProps = {
   title: string;
   value: string | string[];
 };
 
-export function CardCollapse({ title, value }: CardCollapseProps) {
+export function AboutCardCollapse({ title, value }: CardCollapseProps) {
   const [toggle, setToggle] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
 

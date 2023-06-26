@@ -4,7 +4,7 @@ type CardProps = {
   cursorPointer?: boolean;
 };
 
-export function Card({ icon, label, cursorPointer }: CardProps) {
+export function AboutCard({ icon, label, cursorPointer }: CardProps) {
   return (
     <div
       className={`grid grid-cols-[min-content_1fr] py-6 mb-[30px] items-center bg-discount-gradient rounded-[20px] feature-card ${
