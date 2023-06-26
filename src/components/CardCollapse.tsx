@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
 import styles from "../style";
 
@@ -31,7 +31,7 @@ export function CardCollapse({ title, value }: CardCollapseProps) {
 
       <div
         ref={contentRef}
-        className={`overflow-hidden transition-[height] ease duration-[1s]`}
+        className={`overflow-hidden transition-[height] ease-out duration-[1s]`}
         style={
           toggle
             ? { height: contentRef.current?.scrollHeight + "px" }
