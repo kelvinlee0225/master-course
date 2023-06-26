@@ -7,7 +7,7 @@ type CardProps = {
 export function AboutCard({ icon, label, cursorPointer }: CardProps) {
   return (
     <div
-      className={`grid grid-cols-[min-content_1fr] py-6 mb-[30px] items-center bg-discount-gradient rounded-[20px] feature-card ${
+      className={`grid grid-cols-[min-content_1fr] py-6 mb-[30px] items-center bg-card-gradient rounded-[20px] feature-card ${
         cursorPointer && "cursor-pointer"
       }`}
     >

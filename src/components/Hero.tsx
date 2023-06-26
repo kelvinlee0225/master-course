@@ -11,7 +11,7 @@ export function Hero() {
       <div
         className={`flex-1 ${styles.flexStart} flex-col font-poppins ${styles.paddingX}`}
       >
-        <div className="text-white text-2xl bg-discount-gradient rounded-[10px] py-[6px] px-4">
+        <div className="text-white text-2xl bg-card-gradient rounded-[10px] py-[6px] px-4">
           $13.99
           <br />
           <span className="text-[#d1d7dc] text-sm line-through">
