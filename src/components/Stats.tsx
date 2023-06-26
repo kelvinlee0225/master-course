@@ -9,9 +9,8 @@ export function Stats() {
     >
       {StatsConstants.map((stat, index) => {
         return (
-          <div className={`${styles.flexCenter}`}>
+          <div className={`${styles.flexCenter}`} key={stat.id}>
             <h1
-              key={stat.id}
               className={`text-white font-semibold font-poppins  ${
                 index === StatsConstants.length - 1 ? "ml-4" : "mr-4"
               } ss:text-[40px] text-[30px] flex flex-row items-center`}
@@ -21,8 +20,8 @@ export function Stats() {
                 <div className="flex flex-row ml-2">
                   {Array(+stat.value[0])
                     .fill(1)
-                    .map(() => (
-                      <BsStarFill />
+                    .map((_value, index) => (
+                      <BsStarFill key={`star-${index}`} />
                     ))}
                   <BsStarHalf />
                 </div>
