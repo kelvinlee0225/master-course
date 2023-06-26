@@ -1,5 +1,12 @@
 import styles from "./style";
-import { NavBar, Stats, Hero, Certificate, About } from "./components";
+import {
+  NavBar,
+  Stats,
+  Hero,
+  Certificate,
+  About,
+  Testimonials,
+} from "./components";
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
@@ -20,6 +27,7 @@ const App = () => (
         <Stats />
         <Certificate />
         <About />
+        <Testimonials />
       </div>
     </div>
   </div>
