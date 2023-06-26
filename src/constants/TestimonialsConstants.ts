@@ -30,6 +30,6 @@ export const TestimonialsConstants = [
     name: "Troy Campbell",
     profile: Troy_Campbell,
     comment:
-      "The platform is user-friendly, and the online learning format allowed me to study at my own pace. I appreciate the knowledge that I will carry with me throughout the entire course. It was a beautiful experience, and I am happy to be able to add this to my CV",
+      "The platform is user-friendly, and the online learning format allowed me to study at my own pace. I appreciate the knowledge that I will carry with me throughout the entire course. It was a beautiful experience, and I am happy to be able to add this to my CV.",
   },
 ];
