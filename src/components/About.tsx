@@ -4,9 +4,9 @@ import { CardCollapse } from "./CardCollapse";
 import { BiTime } from "react-icons/bi";
 import { AiOutlineCalendar, AiOutlineDownload } from "react-icons/ai";
 
-export function Career() {
+export function About() {
   return (
-    <div className="sm:py-0 py-4">
+    <section className="sm:py-0 py-4" id="about">
       <h1 className="font-poppins font-semibold text-[50px] text-white">
         About Career
       </h1>
@@ -36,9 +36,10 @@ export function Career() {
               <AiOutlineDownload className="text-secondary h-[32px] w-[32px]" />
             }
             label="Donwload syllabus"
+            cursorPointer
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
