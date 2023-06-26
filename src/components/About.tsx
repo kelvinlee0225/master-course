@@ -7,7 +7,7 @@ import { AiOutlineCalendar, AiOutlineDownload } from "react-icons/ai";
 export function About() {
   return (
     <section className="sm:py-0 py-4" id="about">
-      <h1 className="font-poppins font-semibold text-[50px] text-white">
+      <h1 className="font-poppins font-semibold text-[48px] text-white">
         About Career
       </h1>
       <div className="grid md:grid-cols-2 md:gap-[128px]">
