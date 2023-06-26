@@ -25,7 +25,7 @@ export function Hero() {
         </div>
 
         <div className="flex flex-row items-center w-full justify-between">
-          <h1 className="text-white font-poppins font-semibold ss:text-[72px] text-[52px] ss:leading-[100px] leading-[75px]">
+          <h1 className={styles.heading1}>
             Data Analytics <br className="sm:block hidden" />{" "}
             <span className="text-gradient">Certificate</span>
           </h1>
