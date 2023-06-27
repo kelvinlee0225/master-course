@@ -6,7 +6,7 @@ export function CTA() {
       <div
         className={`${styles.flexCenter} ${styles.padding} w-full max-w-[1060px] sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}
       >
-        <div className="flex flex-1 flex-col">
+        <div className="flex flex-1 flex-col sm:text-left text-center ">
           <h2 className={styles.heading2}>Enroll the career now!</h2>
           <p className={`${styles.paragraph} mt-5`}>
             No prior knowledge is required
@@ -14,7 +14,7 @@ export function CTA() {
         </div>
         <div>
           <button
-            className={`${styles.flexCenter} bg-blue-gradient rounded-[10px] w-[170px] h-[64px] font-semibold`}
+            className={`${styles.flexCenter} bg-blue-gradient rounded-[10px] w-[170px] h-[64px] font-semibold sm:mt-0 mt-8`}
           >
             Get Started
           </button>
