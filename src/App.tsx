@@ -8,6 +8,7 @@ import {
   Testimonials,
   CTA,
 } from "./components";
+import { Footer } from "./components/Footer";
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
@@ -30,6 +31,12 @@ const App = () => (
         <About />
         <Testimonials />
         <CTA />
+      </div>
+    </div>
+
+    <div className={`bg-black ${styles.paddingY} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Footer />
       </div>
     </div>
   </div>
