@@ -31,15 +31,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+      - name: Set up Node
+        uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: 'yarn'
       - name: Install dependencies
-        run: yarn
+        run: yarn install
       - name: Build
         run: yarn build
       - name: Setup Pages
@@ -51,4 +49,4 @@ jobs:
           path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v
