@@ -1,15 +1,14 @@
 import { useState } from "react";
 import { navLinks } from "../constants";
 import { RiMenu3Fill, RiCloseFill } from "react-icons/ri";
+import styles from "../style";
 
 export function NavBar() {
   const [toggle, setToggle] = useState(false);
 
   return (
     <nav className="w-full flex justify-between items-center navbar py-6">
-      <div className="font-roboto_condensed text-white font-bold	italic sm:text-2xl text-lg	cursor-pointer">
-        COURSE MASTER
-      </div>
+      <div className={`${styles.logo} cursor-pointer`}>COURSE MASTER</div>
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
