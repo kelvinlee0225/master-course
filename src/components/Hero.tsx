@@ -11,19 +11,6 @@ export function Hero() {
       <div
         className={`flex-1 ${styles.flexStart} flex-col font-poppins ${styles.paddingX}`}
       >
-        <div className="text-white text-2xl bg-card-gradient rounded-[10px] py-[6px] px-4">
-          $13.99
-          <br />
-          <span className="text-[#d1d7dc] text-sm line-through">
-            $74.99
-          </span>{" "}
-          <span className="text-white text-sm">81% off</span>
-          <br />
-          <span className="text-secondary text-sm">
-            5 hours left at this price!
-          </span>
-        </div>
-
         <div className="flex flex-row items-center w-full justify-between">
           <h1 className={styles.heading1}>
             Data Analytics <br className="sm:block hidden" />{" "}
@@ -41,6 +28,19 @@ export function Hero() {
           sought-after skills that will prepare you for employment, without the
           need for a degree or prior experience.
         </p>
+
+        <div className="text-white text-2xl bg-card-gradient rounded-[10px] p-6 mt-8 sm:self-start self-center">
+          $13.99
+          <br />
+          <span className="text-[#d1d7dc] text-sm line-through">
+            $74.99
+          </span>{" "}
+          <span className="text-white text-sm">81% off</span>
+          <br />
+          <span className="text-secondary text-sm">
+            5 hours left at this price!
+          </span>
+        </div>
       </div>
 
       <div className={`flex flex-1 ${styles.flexCenter} md:my-0 my-10`}>
