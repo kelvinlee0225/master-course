@@ -1,7 +1,7 @@
 import styles from "../style";
 import { GoArrowUpRight } from "react-icons/go";
 
-function GetStarted() {
+export function GetStarted() {
   return (
     <div
       className={`${styles.flexCenter} w-[140px] h-[140px] rounded-full bg-blue-gradient p-[2px] cursor-pointer`}
@@ -25,5 +25,3 @@ function GetStarted() {
     </div>
   );
 }
-
-export default GetStarted;

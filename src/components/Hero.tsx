@@ -1,6 +1,6 @@
 import DataAsset from "../assets/data.svg";
 import styles from "../style";
-import GetStarted from "./GetStarted";
+import { GetStarted } from "./GetStarted";
 
 export function Hero() {
   return (

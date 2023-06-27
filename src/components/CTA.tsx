@@ -1,5 +1,6 @@
 import styles from "../style";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function CTA() {
   return (
     <div className={`${styles.flexCenter} ${styles.marginY} w-full`}>
