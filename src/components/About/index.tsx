@@ -6,7 +6,7 @@ import { AiOutlineCalendar, AiOutlineDownload } from "react-icons/ai";
 
 export function About() {
   return (
-    <section className="sm:py-0 py-4" id="about">
+    <section className="py-6" id="about">
       <h1 className="font-poppins font-semibold text-[48px] text-white">
         About Career
       </h1>

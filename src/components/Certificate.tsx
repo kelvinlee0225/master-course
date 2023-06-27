@@ -3,9 +3,7 @@ import CertificateAsset from "../assets/certificate.svg";
 
 export function Certificate() {
   return (
-    <div
-      className={`flex md:flex-row flex-col justify-around ${styles.paddingY}`}
-    >
+    <div className={`flex md:flex-row flex-col justify-around sm:py-10 py-6`}>
       <div className="flex justify-center w-full">
         <img
           src={CertificateAsset}
