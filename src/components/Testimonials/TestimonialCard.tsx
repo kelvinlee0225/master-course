@@ -1,4 +1,4 @@
-import styles from "../style";
+import styles from "../../style";
 import { BiSolidQuoteLeft } from "react-icons/bi";
 
 type TestimonialCardProps = {

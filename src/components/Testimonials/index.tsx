@@ -1,5 +1,5 @@
-import { TestimonialsConstants } from "../constants";
-import styles from "../style";
+import { TestimonialsConstants } from "../../constants";
+import styles from "../../style";
 import { TestimonialCard } from "./TestimonialCard";
 
 export function Testimonials() {
