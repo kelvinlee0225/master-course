@@ -8,7 +8,7 @@ export function CTA() {
         className={`${styles.flexCenter} ${styles.padding} w-full max-w-[1060px] sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}
       >
         <div className="flex flex-1 flex-col sm:text-left text-center ">
-          <h2 className={styles.heading2}>Enroll the career now!</h2>
+          <h2 className={styles.heading2}>Enroll in the career now!</h2>
           <p className={`${styles.paragraph} mt-5`}>
             No prior knowledge is required
           </p>
