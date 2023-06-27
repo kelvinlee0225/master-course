@@ -4,7 +4,7 @@ import { TestimonialCard } from "./TestimonialCard";
 
 export function Testimonials() {
   return (
-    <section className={styles.paddingY} id="testimonials">
+    <section className="md:pt-16 py-6" id="testimonials">
       <h1 className={`${styles.heading2} sm:text-right text-center `}>
         More than 400,000 students <br />
         recommend us

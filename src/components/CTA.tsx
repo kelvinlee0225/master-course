@@ -3,7 +3,7 @@ import styles from "../style";
 // eslint-disable-next-line react-refresh/only-export-components
 export function CTA() {
   return (
-    <div className={`${styles.flexCenter} ${styles.marginY} w-full`}>
+    <div className={`${styles.flexCenter} sm:my-10 my-6 w-full`}>
       <div
         className={`${styles.flexCenter} ${styles.padding} w-full max-w-[1060px] sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}
       >
