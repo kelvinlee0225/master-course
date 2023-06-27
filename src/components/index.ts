@@ -4,3 +4,4 @@ export * from "./Hero";
 export * from "./Certificate";
 export * from "./About";
 export * from "./Testimonials";
+export * from "./CTA";

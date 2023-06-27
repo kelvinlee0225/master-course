@@ -6,11 +6,12 @@ import {
   Certificate,
   About,
   Testimonials,
+  CTA,
 } from "./components";
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+    <div className={`${styles.paddingX} ${styles.flexCenter} sticky top-0`}>
       <div className={`${styles.boxWidth}`}>
         <NavBar />
       </div>
@@ -28,6 +29,7 @@ const App = () => (
         <Certificate />
         <About />
         <Testimonials />
+        <CTA />
       </div>
     </div>
   </div>
