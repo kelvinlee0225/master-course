@@ -1,20 +1,20 @@
 import { useState } from "react";
 import { navLinks } from "../constants";
 import { RiMenu3Fill, RiCloseFill } from "react-icons/ri";
-import styles from "../style";
+import { Logo } from "./Logo";
 
 export function NavBar() {
   const [toggle, setToggle] = useState(false);
 
   return (
     <nav className="w-full flex justify-between items-center navbar py-6">
-      <div className={`${styles.logo} cursor-pointer`}>COURSE MASTER</div>
+      <Logo />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] text-white ${
+            className={`font-poppins font-normal cursor-pointer text-[20px] text-white ${
               index === navLinks.length - 1 ? "mr-0" : "mr-10"
             }`}
           >
@@ -48,11 +48,18 @@ export function NavBar() {
           {navLinks.map((nav, index) => (
             <li
               key={nav.id}
-              className={`font-poppins font-normal cursor-pointer text-[16px] text-white ${
+              className={`font-poppins font-normal cursor-pointer text-[20px] text-white ${
                 index === navLinks.length - 1 ? "mr-0" : "mb-4"
               }`}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a
+                href={`#${nav.id}`}
+                onClick={() => {
+                  if (toggle) setToggle(false);
+                }}
+              >
+                {nav.title}
+              </a>
             </li>
           ))}
         </ul>
