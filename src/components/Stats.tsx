@@ -1,5 +1,5 @@
 import styles from "../style";
-import { StatsConstants } from "../constants";
+import { statsConstants } from "../constants";
 import { BsStarFill, BsStarHalf } from "react-icons/bs";
 
 export function Stats() {
@@ -7,12 +7,12 @@ export function Stats() {
     <div
       className={`xl:py-3 ${styles.paddingY} flex justify-around flex-row flex-wrap w-full `}
     >
-      {StatsConstants.map((stat, index) => {
+      {statsConstants.map((stat, index) => {
         return (
           <div className={`${styles.flexCenter}`} key={stat.id}>
             <h1
               className={`text-white font-semibold font-poppins  ${
-                index === StatsConstants.length - 1 ? "ml-4" : "mr-4"
+                index === statsConstants.length - 1 ? "ml-4" : "mr-4"
               } ss:text-[40px] text-[30px] flex flex-row items-center`}
             >
               {stat.value}

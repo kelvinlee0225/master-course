@@ -1,5 +1,5 @@
 import { AboutCard } from "./AboutCard";
-import { AboutCareerConstants } from "../../constants";
+import { aboutCareerConstants } from "../../constants";
 import { AboutCardCollapse } from "./AboutCardCollapse";
 import { BiTime } from "react-icons/bi";
 import { AiOutlineCalendar, AiOutlineDownload } from "react-icons/ai";
@@ -12,7 +12,7 @@ export function About() {
       </h1>
       <div className="grid md:grid-cols-2 md:gap-[128px]">
         <div>
-          {AboutCareerConstants.map((about) => (
+          {aboutCareerConstants.map((about) => (
             <AboutCardCollapse
               key={about.id}
               title={about.title}

@@ -3,7 +3,7 @@ import Vanessa_Malone from "../assets/VanessaMalone.jpg";
 import Jazmine_Kent from "../assets/JazmineKent.jpg";
 import Troy_Campbell from "../assets/TroyCampbell.jpg";
 
-export const TestimonialsConstants = [
+export const testimonialsConstants = [
   {
     id: "testimonial-1",
     name: "Joseph Franklin",

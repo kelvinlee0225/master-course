@@ -1,4 +1,4 @@
-export const AboutCareerConstants = [
+export const aboutCareerConstants = [
   {
     id: "about-1",
     title: "Introduction",

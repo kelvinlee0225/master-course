@@ -1,4 +1,4 @@
-export const StatsConstants = [
+export const statsConstants = [
   {
     id: "stats-1",
     title: "Students",

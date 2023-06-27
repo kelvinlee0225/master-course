@@ -1,4 +1,4 @@
-export const FooterLinks = [
+export const footerLinks = [
   {
     id: "course-links",
     title: "Courses",

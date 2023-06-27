@@ -1,4 +1,4 @@
-import { TestimonialsConstants } from "../../constants";
+import { testimonialsConstants } from "../../constants";
 import styles from "../../style";
 import { TestimonialCard } from "./TestimonialCard";
 
@@ -10,7 +10,7 @@ export function Testimonials() {
         recommend us
       </h1>
       <div className="grid md:grid-cols-2 md:gap-5 gap-8 md:p-10">
-        {TestimonialsConstants.map((testimonial) => (
+        {testimonialsConstants.map((testimonial) => (
           <TestimonialCard
             key={testimonial.id}
             name={testimonial.name}
