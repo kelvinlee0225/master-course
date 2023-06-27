@@ -1,14 +1,15 @@
-import { FooterLinks } from "../constants";
+import { footerLinks } from "../constants";
 import styles from "../style";
+import { Logo } from "./Logo";
 
 export function Footer() {
   return (
     <section className={`flex sm:flex-row flex-col justify-around px-8`}>
-      <div className={`${styles.logo} self-center sm:mb-0 mb-8`}>
-        COURSE MASTER
+      <div className="self-center sm:mb-0 mb-8">
+        <Logo />
       </div>
 
-      {FooterLinks.map((footerLink) => (
+      {footerLinks.map((footerLink) => (
         <div
           className="flex flex-col mx-6 sm:mb-0 mb-8 sm:items-start items-center"
           key={footerLink.id}

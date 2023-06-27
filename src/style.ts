@@ -1,7 +1,7 @@
 const styles = {
   boxWidth: "xl:max-w-[1500px] w-full",
 
-  logo: "font-roboto_condensed text-white font-bold	italic sm:text-2xl text-xl",
+  logo: "font-roboto_mono text-white tracking-tight font-bold sm:text-3xl text-xl ",
 
   heading1:
     "text-white font-poppins font-semibold ss:text-[72px] text-[52px] ss:leading-[100px] leading-[75px]",
